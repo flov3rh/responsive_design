@@ -18,3 +18,30 @@ q:before, q:after { content:''; }
 }
 
 /*END OF RESET CSS*/
+
+.flex-container { display: flex; }
+
+.flex-space-a { justify-content: space-around; }
+
+.flex-space-b { justify-content: space-between; }
+
+.flex-end { justify-content: flex-end; }
+
+.flex-start { justify-content: flex-start; }
+
+.inline>li { display: inline-block; }
+
+/*---------------------------*/
+
+header { 
+  background: black; 
+  height: 20px;
+}
+
+header>ul {
+}
+
+header>ul>li { 
+  color: lightgray; 
+  list-style-type: none;
+}
