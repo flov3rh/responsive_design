@@ -146,6 +146,8 @@ nav {
   width: 100vw;
   height: 48px;
   background-color: orange;
+  position: sticky;
+  top: 0;
 }
 
 .mobile_nav>div:nth-child(1) {
@@ -176,8 +178,9 @@ nav {
 }
 
 .cover_trigger {
-  width: 100%;
+  max-width: 100%;
   background-color: blue;
+  height: 300px;
 }
 
 
