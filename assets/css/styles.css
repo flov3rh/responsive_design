@@ -139,33 +139,58 @@ h2 > a {
   font-weight: 700;
 }
 
+footer {
+  width: 100%;
+}
+
 footer > div {
   background-color: #333;
   height: 200px;
 }
 
-footer > div > ul:nth-child(1) > li {
-  padding: 10px;
-  margin: 10px;
+footer > div > ul {
+  margin: 10px auto;
+}
+
+footer > div > ul:first-child {
+  margin-left: -3px; 
+}
+
+footer > div > ul:first-child > li {
+  padding: 12px;
+  margin: 2px;
   border-radius: 50%;
   background-color: #131313;
   color: white;
 }
 
 footer > div > ul:nth-child(2) > li {
-  padding: 10px;
+  margin: 5px auto;
+  padding: 2px;
   color: #aaaaaa;
   font-size: 0.7em;
 }
 
-footer > p {
-  height: 100px;
+footer > div:last-child > p {
+  height: 20px;
   width: 100%;
   color: white;
   background-color: #000000;
+  font-size: .85em;
+  text-align: center;
+}
+
+footer>div:last-child {
+  background: black;
+  color: gray;
+  height: 120px;
 }
 
 /* General Classes*/
+
+.red {
+	color:red;
+}
 
 .left {
   float: left;
