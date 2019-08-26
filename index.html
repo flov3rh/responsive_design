@@ -1,233 +1,282 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>responsive_design</title>
+    <script src="https://use.fontawesome.com/e5902860ba.js"></script>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>responsive_design</title>
-  <script src="https://use.fontawesome.com/e5902860ba.js"></script>
-  <link rel="stylesheet" href="assets/css/styles.css" />
-</head>
+  <body>
+    <header class="header flex flex-space-b">
+      <ul class="inline">
+        <li><a href="#">News</a></li>
+        <li><a href="#">Events</a> <i class="fa fa-sort-down"></i></li>
+        <li><a href="#">Business</a> <i class="fa fa-sort-down"></i></li>
+        <li><a href="#">AMAs</a></li>
+        <li><a href="#">Spaces</a></li>
+        <li><a href="#">Terms &#38; Conditions</a></li>
+      </ul>
 
-<body>
-  <header class="header flex flex-space-b">
-    <ul class="inline">
-      <li>News</li>
-      <li>Events <i class="fa fa-sort-down"></i> </li>
-      <li>Business <i class="fa fa-sort-down"></i> </li>
-      <li>AMAs</li>
-      <li>Spaces</li>
-      <li>Terms &#38; Conditions</li>
-    </ul>
+      <ul class="inline no-bullets">
+        <li><a href="#">About</a></li>
+        <li><a href="#">Team</a></li>
+        <li><a href="#">Advertise</a></li>
+        <li><a href="#">Jobs</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </header>
 
-    <ul class="inline no-bullets">
-      <li>About</li>
-      <li>Team</li>
-      <li>Advertise</li>
-      <li>Jobs</li>
-      <li>Contact</li>
-    </ul>
-  </header>
+    <!--primary nav-->
 
-  <!--primary nav-->
+    <nav class="primary_nav">
+      <ul class="flex flex-row  no-bullets ">
+        <li><a href="#">LATEST</a></li>
+        <li><a href="#">HARD FORK</a></li>
+        <li><a href="#">PLUGGED</a></li>
+        <li><a href="#">FUNDAMENTALS</a></li>
+        <li><a href="#">WORK 2030</a></li>
+      </ul>
+    </nav>
 
-  <nav class="primary_nav">
-    <ul class="flex flex-row ">
-      <li>LATEST</li>
-      <li>HARD FORK</li>
-      <li>PLUGGED</li>
-      <li>FUNDAMENTALS</li>
-      <li>WORK 2030</li>
-    </ul>
-  </nav>
+    <!--tablet nav-->
 
-  <!--tablet nav-->
+    <nav class="tablet">
+      <div class="tablet_nav_container flex flex-row center-v">
+        <div class="logo flex flex-row center-h center-v">
+          <img
+            src="https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/tnw.svg"
+            alt="not found tnw logo"
+          />
+        </div>
 
-  <nav class="tablet">
-    <div class="tablet_nav_container flex flex-row center-v">
+        <div class="tablet_header_container flex flex-col">
+          <header class="header_tablet flex_container flex-space-a">
+            <ul class="flex flex_container flex-row center-v no-bullets">
+              <li><a href="#">News</a></li>
+              <li><a href="#">Events</a> <i class="fa fa-sort-down"></i></li>
+              <li><a href="#">Business</a> <i class="fa fa-sort-down"></i></li>
+              <li><a href="#">AMAs</a></li>
+              <li><a href="#">Spaces</a></li>
+              <li><a href="#">Terms &#38; Conditions</a></li>
+            </ul>
+          </header>
 
-      <div class="logo flex flex-row center-h center-v">
-        <img src="https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/tnw.svg" alt="not found tnw logo">
+          <nav class="primary_nav_tablet">
+            <ul class="flex flex-row center-v ">
+              <li><a href="#">LATEST</a></li>
+              <li><a href="#">HARD FORK</a></li>
+              <li><a href="#">PLUGGED</a></li>
+              <li><a href="#">FUNDAMENTALS</a></li>
+              <li><a href="#">WORK 2030</a></li>
+            </ul>
+          </nav>
+        </div>
       </div>
+    </nav>
 
-      <div class="tablet_header_container flex flex-col"> 
-        <header class="header_tablet flex_container flex-space-a">
-          <ul class="flex flex_container flex-row center-v no-bullets">
-            <li>News Events <i class="fa fa-list"></i> </li>
-            <li>Business <i class="fa fa-list"></i> </li>
-            <li>AMAs</li>
-            <li>Spaces</li>
-            <li>Terms &#38; Conditions</li>
-          </ul>
-        </header>
+    <!--mobile nav-->
 
-        <nav class="primary_nav_tablet">
-          <ul class="flex flex-row center-v ">
-            <li>LATEST</li>
-            <li>HARD FORK</li>
-            <li>PLUGGED</li>
-            <li>FUNDAMENTALS</li>
-            <li>WORK 2030</li>
-          </ul>
-        </nav>
+    <nav class="flex space-between mobile_nav">
+      <div class="flex flex-row center-h center-v">
+        <a href="#">
+          <img
+            src="https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/tnw.svg"
+            alt="not found tnw logo"
+          />
+        </a>
       </div>
-    </div>
-  </nav>
-
-  <!--mobile nav-->
-
-  <nav class="flex space-between mobile_nav">
-    <div class="flex flex-row center-h center-v">
-      <img src="https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/tnw.svg" alt="not found tnw logo">
-    </div>
-    <div>
-      <i class="fa fa-search"></i>
-      <i class="fa fa-bars"></i>
-    </div>
-  </nav>
-
-  <!--main-->
-
-  <main>
-    <section class="flex flex-col boxes">
-      <a class="cover_trigger" href="#">
-        <div></div>
+      <a>
+        <i class="fa fa-search"></i>
+        <i class="fa fa-bars"></i>
       </a>
+    </nav>
 
-      <div>
+    <!--main-->
+
+    <main>
+      <section class="flex flex-col boxes">
         <a class="cover_trigger" href="#">
           <div></div>
         </a>
 
-        <a class="cover_trigger" href=#>
-          <div></div>
-        </a>
-      </div>
-    </section>
-
-    <div class="ad"></div>
-
-    <section class="flex flex-col latest_news">
-      <h2><a class="orange-hover" href="#">Latest News <i class="fa fa-arrow-right"></i></a></h2>
-      <div class="flex flex-col">
-        <article></article>
-        <article></article>
-        <article></article>
-        <article></article>
-        <article></article>
-        <article></article>
-        <article></article>
-        <article></article>
-      </div>
-    </section>
-
-    <div class="ad"></div>
-
-    <section class="latest_funding">
-      <div>
         <div>
-          <h2><a class="orange-hover" href="#">Latest funding rounds on Index.co <i class="fa fa-arrow-right"></i></a>
+          <a class="cover_trigger" href="#">
+            <div></div>
+          </a>
+
+          <a class="cover_trigger" href="#">
+            <div></div>
+          </a>
+        </div>
+      </section>
+
+      <div class="ad"></div>
+
+      <section class="flex flex-col latest_news">
+        <h2>
+          <a class="orange-hover" href="#"
+            >Latest News <i class="fa fa-arrow-right"></i
+          ></a>
+        </h2>
+        <div class="flex flex-col">
+          <article></article>
+          <article></article>
+          <article></article>
+          <article></article>
+          <article></article>
+          <article></article>
+          <article></article>
+          <article></article>
+        </div>
+      </section>
+
+      <div class="ad"></div>
+
+      <section class="latest_funding">
+        <div>
+          <div>
+            <h2>
+              <a class="orange-hover" href="#"
+                >Latest funding rounds on Index.co
+                <i class="fa fa-arrow-right"></i
+              ></a>
+            </h2>
+            <ul class="no-bullets">
+              <li><a class="orange-hover" href="#">See more</a></li>
+              <li><a class="orange-hover" href="#">Updates</a></li>
+              <li><a class="orange-hover" href="#">Add info</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <div class="box-1"></div>
+            <div class="box-2"></div>
+            <div class="box-3"></div>
+            <div class="box-4"></div>
+          </div>
+        </div>
+      </section>
+
+      <div class="categories">
+        <section class="apps">
+          <h2>
+            <a class="orange-hover" href="#"
+              >Apps<i class="fa fa-arrow-right"></i
+            ></a>
           </h2>
-          <ul class="no-bullets">
-            <li><a class="orange-hover" href="#">See more</a></li>
-            <li><a class="orange-hover" href="#">Updates</a></li>
-            <li><a class="orange-hover" href="#">Add info</a></li>
-          </ul>
+        </section>
+
+        <section class="gear">
+          <h2>
+            <a class="orange-hover" href="#"
+              >Gear<i class="fa fa-arrow-right"></i
+            ></a>
+          </h2>
+        </section>
+
+        <section class="tech">
+          <h2>
+            <a class="orange-hover" href="#"
+              >Tech<i class="fa fa-arrow-right"></i
+            ></a>
+          </h2>
+        </section>
+
+        <section class="creative">
+          <h2>
+            <a class="orange-hover" href="#"
+              >Creative<i class="fa fa-arrow-right"></i
+            ></a>
+          </h2>
+        </section>
+
+        <section class="podium">
+          <h2>
+            <a class="orange-hover" href="#"
+              >Podium<i class="fa fa-arrow-right"></i
+            ></a>
+          </h2>
+        </section>
+
+        <section class="insights">
+          <h2>
+            <a class="orange-hover" href="#"
+              >Insights<i class="fa fa-arrow-right"></i
+            ></a>
+          </h2>
+        </section>
+
+        <section class="launch">
+          <h2>
+            <a class="orange-hover" href="#"
+              >Launch<i class="fa fa-arrow-right"></i
+            ></a>
+          </h2>
+        </section>
+
+        <section class="distract">
+          <h2>
+            <a class="orange-hover" href="#"
+              >Distract<i class="fa fa-arrow-right"></i
+            ></a>
+          </h2>
+        </section>
+
+        <section></section>
+      </div>
+
+      <section class="flex flex-col latest_deals">
+        <div class="flex flex-space-b center-v">
+          <h2>
+            <a class="orange-hover" href="#"
+              >Latest Deals <i class="fa fa-arrow-right"></i
+            ></a>
+          </h2>
+          <a class="orange-hover" href="#">See all deals</a>
         </div>
 
         <div>
-          <div class="box-1"></div>
-          <div class="box-2"></div>
-          <div class="box-3"></div>
-          <div class="box-4"></div>          
+          <div class="deal_box_1"></div>
+          <div class="deal_box_2"></div>
+          <div class="deal_box_3"></div>
+          <div class="deal_box_4"></div>
+          <div class="deal_box_5"></div>
+          <div class="deal_box_6"></div>
+          <div class="deal_box_7"></div>
+          <div class="deal_box_8"></div>
         </div>
+      </section>
+
+      <div class="ad"></div>
+    </main>
+
+    <footer class="flex_container">
+      <div class="flex flex-col center-h center-v">
+        <ul class="flex flex-row center-h no-bullets">
+          <li><i class="fa fa-facebook" aria-hidden="true"></i></li>
+          <li><i class="fa fa-twitter"></i></li>
+          <li><i class="fa fa-youtube"></i></li>
+          <li><i class="fa fa-instagram"></i></li>
+          <li><i class="fa fa-pinterest"></i></li>
+          <li><i class="fa fa-feed"></i></li>
+          <li><i class="fa fa-envelope"></i></li>
+        </ul>
+        <ul class="flex flex-row center-h no-bullets">
+          <li>EVENTS</li>
+          <li>ABOUT</li>
+          <li>TEAM</li>
+          <li>ADVERTISE</li>
+          <li>JOBS</li>
+          <li>CONTACT</li>
+        </ul>
       </div>
-    </section>
-
-    <div class="categories">
-      <section class="apps">
-        <h2><a class="orange-hover" href="#">Apps<i class="fa fa-arrow-right"></i></a></h2>
-      </section>
-
-      <section class="gear">
-        <h2><a class="orange-hover" href="#">Gear<i class="fa fa-arrow-right"></i></a></h2>
-      </section>
-
-      <section class="tech">
-        <h2><a class="orange-hover" href="#">Tech<i class="fa fa-arrow-right"></i></a></h2>
-      </section>
-
-      <section class="creative">
-        <h2><a class="orange-hover" href="#">Creative<i class="fa fa-arrow-right"></i></a></h2>
-      </section>
-
-      <section class="podium">
-        <h2><a class="orange-hover" href="#">Podium<i class="fa fa-arrow-right"></i></a></h2>
-      </section>
-
-      <section class="insights">
-        <h2><a class="orange-hover" href="#">Insights<i class="fa fa-arrow-right"></i></a></h2>
-      </section>
-
-      <section class="launch">
-        <h2><a class="orange-hover" href="#">Launch<i class="fa fa-arrow-right"></i></a></h2>
-      </section>
-
-      <section class="distract">
-        <h2><a class="orange-hover" href="#">Distract<i class="fa fa-arrow-right"></i></a></h2>
-      </section>
-
-      <section></section>
-    </div>
-
-    <section class="flex flex-col latest_deals">
-      <div class="flex flex-space-b center-v">
-        <h2><a class="orange-hover" href="#">Latest Deals <i class="fa fa-arrow-right"></i></a></h2>
-        <a class="orange-hover" href="#">See all deals</a>
+      <div class="flex flex-col center-h">
+        <p>The Next Web © 2006–2019 The Next Web B.V.</p>
+        <p>Made with <span class="red">♥</span> in Amsterdam.</p>
+        <p>Powered by StackPath</p>
       </div>
-
-      <div>
-        <div class="deal_box_1"></div>
-        <div class="deal_box_2"></div>
-        <div class="deal_box_3"></div>
-        <div class="deal_box_4"></div>
-        <div class="deal_box_5"></div>
-        <div class="deal_box_6"></div>
-        <div class="deal_box_7"></div>
-        <div class="deal_box_8"></div>
-      </div>
-    </section>
-
-    <div class="ad"></div>
-  </main>
-
-  <footer class="flex_container">
-    <div class="flex flex-col center-h center-v">
-      <ul class="flex flex-row center-h no-bullets">
-        <li><i class="fa fa-facebook" aria-hidden="true"></i></li>
-        <li> <i class="fa fa-twitter"></i> </li>
-        <li> <i class="fa fa-youtube"></i> </li>
-        <li> <i class="fa fa-instagram"></i> </li>
-        <li> <i class="fa fa-pinterest"></i> </li>
-        <li> <i class="fa fa-feed"></i> </li>
-        <li> <i class="fa fa-envelope"></i> </li>
-      </ul>
-      <ul class="flex flex-row center-h no-bullets">
-        <li>EVENTS</li>
-        <li>ABOUT</li>
-        <li>TEAM</li>
-        <li>ADVERTISE</li>
-        <li>JOBS</li>
-        <li>CONTACT</li>
-      </ul>
-    </div>
-    <div  class="flex flex-col center-h">
-      <p>The Next Web © 2006–2019 The Next Web B.V.</p>
-      <p>Made with <span class="red">♥</span> in Amsterdam. </p>
-      <p>Powered by StackPath</p>
-    </div>
-  </footer>
-
-</body>
-
+    </footer>
+  </body>
 </html>

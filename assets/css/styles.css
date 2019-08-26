@@ -169,11 +169,11 @@ footer > div:last-child > p {
   width: 100%;
   color: white;
   background-color: #000000;
-  font-size: .85em;
+  font-size: 0.85em;
   text-align: center;
 }
 
-footer>div:last-child {
+footer > div:last-child {
   background: black;
   color: gray;
   height: 120px;
@@ -182,7 +182,7 @@ footer>div:last-child {
 /* General Classes*/
 
 .red {
-	color:red;
+  color: red;
 }
 
 .left {
@@ -225,7 +225,7 @@ footer>div:last-child {
   background-color: red;
 }
 
-.mobile_nav > div:nth-child(1) > img {
+.mobile_nav > div:nth-child(1) > a > img {
   height: 16px;
   width: 66px;
 }
@@ -235,7 +235,11 @@ footer>div:last-child {
   height: 100%;
   width: 48px;
   padding: 16px;
-  border: 1px solid rgba(211, 211, 211, 0.295);
+}
+
+.fa-bars {
+  color: red;
+  margin-left: 3px;
 }
 
 /* Tablet Nav */
@@ -477,6 +481,10 @@ footer>div:last-child {
   .header {
     display: none;
   }
+
+  .mobile_nav {
+    background: white;
+  }
 }
 
 /* Tablet Size */
@@ -487,6 +495,19 @@ footer>div:last-child {
   .mobile_nav,
   .header {
     display: none;
+  }
+
+  .header_tablet {
+    width: 99vw;
+    background-color: black;
+  }
+
+  .header_tablet ul li a {
+    color: white;
+  }
+
+  .primary_nav_tablet ul li a {
+    color: #aaaaaa;
   }
 
   .boxes {
@@ -547,21 +568,25 @@ footer>div:last-child {
     height: 20vh;
     margin-left: 10px;
   }
+
+  .tablet {
+    width: 100%;
+  }
 }
 
 /*/ Desktop size */
 
 @media only screen and (min-width: 1024px) {
-  .logo,.mobile_nav,header ul:nth-child(2),.header_tablet,.primary_nav,.mobile_nav {
+  .logo,
+  .mobile_nav,
+  .header_tablet,
+  .tablet,
+  .mobile_nav {
     display: none;
   }
 
   header {
-    font-size: .6em;
-  }
-  
-  header ul:nth-child(2){
-    display: block;
+    font-size: 0.6em;
   }
 
   .tablet div:nth-child(1) {
@@ -574,7 +599,7 @@ footer>div:last-child {
     height: 50vh;
     flex-direction: row;
   }
-  
+
   .boxes > a {
     height: 100%;
   }
@@ -583,15 +608,18 @@ footer>div:last-child {
     width: 50%;
     height: 100%;
   }
-   
+
   .ad {
-  	height: 75px;
-  	width: 35%;
+    height: 75px;
+    width: 35%;
   }
 
-  .latest_news,.latest_funding, .categories, .latest_deals{
-  	width: 65%;
-  	margin: auto;
+  .latest_news,
+  .latest_funding,
+  .categories,
+  .latest_deals {
+    width: 65%;
+    margin: auto;
   }
 
   .latest_news > div {
@@ -613,18 +641,19 @@ footer>div:last-child {
     width: 24%;
   }
 
-  .latest_funding>div>div:first-child{
+  .latest_funding > div > div:first-child {
     display: flex;
     justify-content: space-between;
   }
 
-  .latest_funding>div>div>ul>* {
+  .latest_funding > div > div > ul > * {
     display: inline-block;
-    font-size: 1.2em; 
+    font-size: 1.2em;
     margin: 0 25px;
   }
 
-  .latest_funding>div>div>ul>li:first-child,.latest_funding>div>div>ul>li:nth-child(2) {
+  .latest_funding > div > div > ul > li:first-child,
+  .latest_funding > div > div > ul > li:nth-child(2) {
     border-right: 1px solid orange;
   }
 
@@ -640,8 +669,8 @@ footer>div:last-child {
     height: 60vh;
   }
 
-  .categories section:nth-child(9){
-    border:none;
+  .categories section:nth-child(9) {
+    border: none;
   }
 
   .latest_deals div:nth-child(2) {
@@ -655,7 +684,40 @@ footer>div:last-child {
     height: 220px;
     margin: 10px auto;
   }
-  
+
+  .header ul {
+    padding-right: 20px;
+  }
+
+  .header ul li {
+    padding: 5px 5px 5px 10px;
+  }
+
+  .header ul li a {
+    color: white;
+  }
+
+  .primary_nav {
+    position: sticky;
+    top: 0;
+    background-color: white;
+    height: 32px;
+  }
+
+  .primary_nav > ul {
+    padding-left: -100px;
+  }
+
+  .primary_nav > ul > li {
+    padding: 10px 10px 10px 0px;
+    font-size: 10px;
+    color: #aaaaaa;
+  }
+
+  .primary_nav ul li a {
+    color: #aaaaaa;
+  }
+
   footer > div:last-child {
     height: 50px;
     flex-direction: row;
@@ -664,7 +726,7 @@ footer>div:last-child {
 
   footer > div:last-child > p {
     background-color: #000000;
-    font-size: .55em;
+    font-size: 0.55em;
     display: inline-block;
     width: auto;
   }
