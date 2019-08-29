@@ -63,6 +63,7 @@ q:after {
 
 a {
   text-decoration: none;
+  color:black;
 }
 
 /*END OF RESET CSS*/
@@ -111,9 +112,18 @@ a {
   display: inline-block;
 }
 
+.height-50{
+  height: 50%;
+}
+
+.gray {
+  color:lightgray;
+}
+
 /*---------------------------*/
 
 /* Tags */
+
 body {
   background-color: rgb(230, 230, 230);
 }
@@ -310,7 +320,6 @@ footer > div:last-child {
   width: 97vw;
   height: 89vh;
   margin: 10px auto;
-  background-color: red;
 }
 
 .boxes > div {
@@ -318,16 +327,69 @@ footer > div:last-child {
   height: 66.6%;
 }
 
-.boxes > div .cover_trigger {
-  height: 50%;
-}
-
 .cover_trigger {
   display: block;
   width: 100%;
   height: 33.3%;
-  background-color: green;
   border: 2px solid white;
+  background: linear-gradient(165deg, red, black);
+  color:white;
+  font-family: verdana;
+}
+
+ .cover_trigger_header {
+   padding: 15px;
+ }
+
+.cover_trigger h1,h2 {
+  font-weight: 700;
+}
+
+.cover_trigger h1 {
+  font-size: 5em;
+  line-height: 0.85;
+}
+
+.cover_trigger h2 {
+  font-size: 2em;
+}
+
+.cover_trigger span {
+  font-size: 0.75em;
+}
+
+.cover_trigger>div {
+  width: 100%;
+  height: 100%;
+}
+
+.cover_trigger_box {
+  flex-direction: column;
+  height: 35%;
+  padding: 15px;
+}
+
+.cover_trigger_box p {
+  font-size: 0.65em;
+  padding: 5px;
+}
+
+.cover_trigger_box_right {
+  padding: 7px;
+}
+
+.cover_trigger_box_right h2 {
+  font-size: 1em;
+}
+
+.cover_trigger_box_right p {
+  font-size: 0.45em;
+  padding: 5px;
+}
+
+
+.boxes > div .cover_trigger {
+  height: 50%;
 }
 
 /* Ad */
@@ -475,7 +537,8 @@ footer > div:last-child {
 
 /*Phone size*/
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 700px) {
+  .display-big,
   .primary_nav,
   .tablet,
   .header {
@@ -489,7 +552,9 @@ footer > div:last-child {
 
 /* Tablet Size */
 
-@media only screen and (min-width: 767px) and (max-width: 1024px) {
+@media only screen and (min-width: 700px) and (max-width: 1000px) {
+
+  .display-big,
   header ul:nth-child(2),
   .primary_nav,
   .mobile_nav,
@@ -576,7 +641,7 @@ footer > div:last-child {
 
 /*/ Desktop size */
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1000px) {
   .logo,
   .mobile_nav,
   .header_tablet,
