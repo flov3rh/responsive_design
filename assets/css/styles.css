@@ -220,11 +220,14 @@ footer > div:last-child {
   float: right;
 }
 
-.black-hover,.orange-hover:hover,.gray-hover:hover {
+.black-hover,
+.orange-hover:hover,
+.gray-hover:hover {
   color: black;
 }
 
-.orange-hover, .black-hover:hover {
+.orange-hover,
+.black-hover:hover {
   color: red;
 }
 
@@ -333,6 +336,7 @@ footer > div:last-child {
 
 .primary_nav {
   height: 48px;
+  z-index: 20000;
 }
 
 /* Main */
@@ -560,48 +564,54 @@ h2 {
   background-color: rgb(230, 230, 230);
 }
 
-.categories-section>h2 {
+.categories-section > h2 {
   margin-bottom: 18px;
 }
 
-.categories-section>div {
+.categories-section > div {
   background: white;
   height: 95%;
   width: 95%;
 }
 
 .categories-section .backgr-fb {
-  background: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/09/Facebook-likes-796x418.png) no-repeat;
+  background: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/09/Facebook-likes-796x418.png)
+    no-repeat;
   width: 100%;
   height: 60%;
   background-color: pink;
   background-size: 100% 100%;
-  position: relative
+  position: relative;
 }
 
-.categories-section .backgr-fb>div{
+.categories-section .backgr-fb > div {
   width: 100%;
   height: 100%;
-  background: linear-gradient(180deg, rgba(255,255,255,0.1), rgba(0,0,0,.9) 90%);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(0, 0, 0, 0.9) 90%
+  );
 }
 
-.categories-section .backgr-fb>div>div{
+.categories-section .backgr-fb > div > div {
   color: white;
   padding: 10px;
 }
 
-.categories-section .backgr-fb>div>div>h4 {
+.categories-section .backgr-fb > div > div > h4 {
   font-size: 24px;
   font-weight: 700;
 }
 
-.categories-section .backgr-fb>div>div>div>p, .categories-section .backgr-fb>div>div>span {
+.categories-section .backgr-fb > div > div > div > p,
+.categories-section .backgr-fb > div > div > span {
   font-size: 14px;
 }
 
-.categories-section .backgr-fb>div>div>div>p {
+.categories-section .backgr-fb > div > div > div > p {
   padding: 5px 20px 5px 0px;
-  color:gray;
+  color: gray;
 }
 
 .categories-section .sub-header {
@@ -609,29 +619,31 @@ h2 {
   height: 100px;
 }
 
-.categories-section .sub-header>div {
+.categories-section .sub-header > div {
   padding: 10px;
   font-size: 17px;
 }
 
-.categories-section .sub-header>.back_firefox {
-  background: url(https://img-cdn.tnwcdn.com/image?fit=600%2C336&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2016%2F08%2FFirefoxHeader.jpg&signature=fbe9f214c2ba9c8774052d41f6781a81) no-repeat;
+.categories-section .sub-header > .back_firefox {
+  background: url(https://img-cdn.tnwcdn.com/image?fit=600%2C336&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2016%2F08%2FFirefoxHeader.jpg&signature=fbe9f214c2ba9c8774052d41f6781a81)
+    no-repeat;
   background-position: center;
   background-size: 180% 100%;
 }
 
 div[class*="back_"] {
-  background: url(https://es.upperroom.org/assets/fallback/square_default-3ae9a684a1bbda2f25bbacd9fa825fe92f9e36d7b8dc6dbec4f448417918f87a.png) no-repeat;
+  background: url(https://es.upperroom.org/assets/fallback/square_default-3ae9a684a1bbda2f25bbacd9fa825fe92f9e36d7b8dc6dbec4f448417918f87a.png)
+    no-repeat;
   width: 45%;
   height: 100%;
 }
 
-.categories-section>div>ul {
+.categories-section > div > ul {
   height: 40%;
   background-color: rgb(230, 230, 230);
 }
 
-.categories-section>div>ul>li {
+.categories-section > div > ul > li {
   border-bottom: 2px solid lightgray;
   padding: 5px;
 }
@@ -649,44 +661,43 @@ div[class*="back_"] {
   margin-bottom: 10px;
 }
 
-.latest_deals>div>div[class*="deal_box_"] {
+.latest_deals > div > div[class*="deal_box_"] {
   display: block;
   box-sizing: content-box;
   padding-bottom: 220px;
   position: relative;
 }
 
-.latest_deals>div>div[class*="deal_box_"]>figure {
+.latest_deals > div > div[class*="deal_box_"] > figure {
   margin: 0;
 }
 
-.latest_deals>div>div[class*="deal_box_"]>figure>figcaption {
+.latest_deals > div > div[class*="deal_box_"] > figure > figcaption {
   font-size: 22px;
 }
 
-.latest_deals>div>div[class*="deal_box_"]>div {
+.latest_deals > div > div[class*="deal_box_"] > div {
   position: absolute;
   bottom: 0;
   width: 100%;
   height: 20px;
 }
 
-.latest_deals>div>div[class*="deal_box_"]>div>p {
+.latest_deals > div > div[class*="deal_box_"] > div > p {
   margin-right: 10px;
 }
 
-.latest_deals>div>div>div>.prev_price{
+.latest_deals > div > div > div > .prev_price {
   text-decoration: line-through;
   font-size: 20px;
   color: lightgray;
 }
 
-.latest_deals>div>div[class*="deal_box_"]>div>p:nth-child(2) {
+.latest_deals > div > div[class*="deal_box_"] > div > p:nth-child(2) {
   font-size: 22px;
   margin-top: -1.5px;
   color: gray;
 }
-
 
 /* Media Queries */
 
@@ -702,6 +713,53 @@ div[class*="back_"] {
 
   .mobile_nav {
     background: white;
+  }
+
+  .latest_news_box {
+    height: 72px;
+    width: 581px;
+  }
+
+  .latest_news_box article {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 10px 0;
+    margin: 0;
+    border: 0;
+  }
+
+  .latest_news_box article figure {
+    height: 75px;
+    width: 75px;
+    padding: 0;
+    margin: 0;
+  }
+
+  .latest_news_box article figure img {
+    width: 75px;
+    height: 75px;
+  }
+
+  .latest_news_box article div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 10px;
+  }
+
+  .latest_news_box > article > div > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+
+  .latest_news_box > article > div > div > span {
+    padding: 15px 20px 20px 0;
+  }
+
+  .latest_news_box > article > div > h4 > a {
+    padding-left: 10px;
   }
 }
 
