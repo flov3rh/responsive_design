@@ -124,6 +124,11 @@ a {
   background-color: #ff4422;
 }
 
+.bottom {
+  position: absolute;
+  bottom: 0;
+}
+
 /*---------------------------*/
 
 /* Tags */
@@ -212,13 +217,11 @@ footer > div:last-child {
   float: right;
 }
 
-.black-hover:hover,
-.orange-hover {
-  ￼color: #ff4422;
+.black-hover:hover,.orange-hover {
+  ￼color: #ff4422; /* Orange */
 }
 
-.black-hover,
-.orange-hover:hover {
+.black-hover,.orange-hover:hover {
   color: black;
 }
 
@@ -449,67 +452,62 @@ h2 {
 
 .latest_funding ul li a {
   display: block;
-  font-size: 1em;
-  padding: 8px;
+  font-size: 16px;
+  padding-right: 8px;
   margin-left: -30px;
 }
 
-.latest_funding div[class*="box-"] {
-  margin: 20px 0 20px 10px;
-  height: 225px;
-}
-
 .boxes-container {
-  height: 100%;
   display: flex;
-  flex-direction: row;
+  justify-content: space-between;
+  margin: 20px 0 65px 0;
 }
 
 .latest_funding_image {
-  height: 60px;
   width: 60px;
+  height: 60px;
   background-color: yellow;
   float: left;
-  position: absolute;
   top: 0;
   margin: 10px;
+  position: absolute;
 }
 
-.box-1 {
+.latest_funding div[class*="box-"] {
   position: relative;
 }
 
-.box-1 a:nth-child(1) h4 {
+.latest_funding div[class*="box-"] a:nth-child(1) h4 {
   height: 39.31px;
 }
 
-.box-1 div {
+.latest_funding div[class*="box-"] div {
   background-color: rgb(243, 235, 241);
 }
 
-.box-1 > div:nth-child(1) {
-  width: 100px;
-  background-color: yellow;
-  height: 30px;
-}
-
-.box-1 a:nth-child(1) > h4 {
+.latest_funding div[class*="box-"] a:nth-child(1) > h4 {
   color: white;
   font-weight: 700;
 }
 
-.latest_funding_desc {
-  padding: 20px;
-}
-
-.latest_funding_desc span {
-  color: #aaaaaa;
+.latest_funding div[class*="box-"] > div:nth-child(1) {
+  width: 100px;
+  height: 30px;
 }
 
 .box-1-travel {
   display: flex;
   width: 100%;
   height: 100%;
+}
+
+.latest_funding_desc {
+  font-size: 12.5px;
+  padding: 20px;
+}
+
+.latest_funding_desc span {
+  color: #aaaaaa;
 }
 
 .latest_funding_investment {
@@ -542,76 +540,93 @@ h2 {
   font-weight: 1000;
 }
 
-/* Apps */
+/* Categories */
 
-.apps {
-  height: 90vh;
-  width: 93vw;
-  margin: 20px auto;
-  background: lightblue;
+.categories {
+  padding-bottom: 80px;
 }
 
-/* Gear */
-
-.gear {
+.categories-section {
   height: 90vh;
   width: 93vw;
-  margin: 20px auto;
-  background: lightblue;
+  margin: 50px auto;
+  background-color: rgb(230, 230, 230);
 }
 
-/* Tech */
-
-.tech {
-  height: 90vh;
-  width: 93vw;
-  margin: 20px auto;
-  background: lightblue;
+.categories-section>h2 {
+  margin-bottom: 18px;
 }
 
-/* Creative */
-
-.creative {
-  height: 90vh;
-  width: 93vw;
-  margin: 20px auto;
-  background: lightblue;
+.categories-section>div {
+  background: white;
+  height: 95%;
+  width: 95%;
 }
 
-/* Podium */
-
-.podium {
-  height: 90vh;
-  width: 93vw;
-  margin: 20px auto;
-  background: lightblue;
+.categories-section .backgr-fb {
+  background: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/09/Facebook-likes-796x418.png) no-repeat;
+  width: 100%;
+  height: 60%;
+  background-color: pink;
+  background-size: 100% 100%;
+  position: relative
 }
 
-/* Insights */
-
-.insights {
-  height: 90vh;
-  width: 93vw;
-  margin: 20px auto;
-  background: lightblue;
+.categories-section .backgr-fb>div{
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, rgba(255,255,255,0.1), rgba(0,0,0,.9) 90%);
 }
 
-/* Launch */
-
-.launch {
-  height: 90vh;
-  width: 93vw;
-  margin: 20px auto;
-  background: lightblue;
+.categories-section .backgr-fb>div>div{
+  color: white;
+  padding: 10px;
 }
 
-/* Distract */
+.categories-section .backgr-fb>div>div>h4 {
+  font-size: 24px;
+  font-weight: 700;
+}
 
-.distract {
-  height: 90vh;
-  width: 93vw;
-  margin: 20px auto;
-  background: lightblue;
+.categories-section .backgr-fb>div>div>div>p, .categories-section .backgr-fb>div>div>span {
+  font-size: 14px;
+}
+
+.categories-section .backgr-fb>div>div>div>p {
+  padding: 5px 20px 5px 0px;
+  color:gray;
+}
+
+.categories-section .sub-header {
+  background: orange;
+  height: 100px;
+}
+
+.categories-section .sub-header>div {
+  padding: 10px;
+  font-size: 17px;
+}
+
+.categories-section .sub-header>.back_firefox {
+  background: url(https://img-cdn.tnwcdn.com/image?fit=600%2C336&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2016%2F08%2FFirefoxHeader.jpg&signature=fbe9f214c2ba9c8774052d41f6781a81) no-repeat;
+  background-position: center;
+  background-size: 180% 100%;
+}
+
+div[class*="back_"] {
+  background: url(https://es.upperroom.org/assets/fallback/square_default-3ae9a684a1bbda2f25bbacd9fa825fe92f9e36d7b8dc6dbec4f448417918f87a.png) no-repeat;
+  width: 45%;
+  height: 100%;
+}
+
+.categories-section>div>ul {
+  height: 40%;
+  background-color: rgb(230, 230, 230);
+}
+
+.categories-section>div>ul>li {
+  border-bottom: 2px solid lightgray;
+  padding: 5px;
 }
 
 /* Latest deals */
@@ -717,7 +732,7 @@ h2 {
 
   .categories > section {
     width: 50%;
-    border: 2px solid white;
+    border: 2px solid gray;
     height: 60vh;
     padding: 10px;
   }
@@ -794,7 +809,6 @@ h2 {
 
   .latest_news article {
     width: 25%;
-    border: 10px solid white;
     height: 250px;
   }
 
@@ -829,8 +843,8 @@ h2 {
 
   .categories > section {
     width: 33%;
-    border: 10px solid white;
     height: 60vh;
+    padding: 5px;
   }
 
   .categories section:nth-child(9) {
