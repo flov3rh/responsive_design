@@ -704,6 +704,15 @@ div[class*="back_"] {
 /*Phone size*/
 
 @media only screen and (max-width: 700px) {
+  *,
+  html,
+  body {
+    overflow-x: hidden;
+  }
+  body {
+    background-color: #ffffff;
+  }
+
   .display-big,
   .primary_nav,
   .tablet,
@@ -713,11 +722,22 @@ div[class*="back_"] {
 
   .mobile_nav {
     background: white;
+    z-index: 10000;
   }
+
+  /*
+  
+  LATEST
+
+  NEWS 
+
+  BOX
+  
+  */
 
   .latest_news_box {
     height: 72px;
-    width: 581px;
+    width: 100%;
   }
 
   .latest_news_box article {
@@ -727,6 +747,7 @@ div[class*="back_"] {
     padding: 10px 0;
     margin: 0;
     border: 0;
+    max-width: 100%;
   }
 
   .latest_news_box article figure {
@@ -760,6 +781,228 @@ div[class*="back_"] {
 
   .latest_news_box > article > div > h4 > a {
     padding-left: 10px;
+  }
+
+  .boxes-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .box-1,
+  .box-2,
+  .box-3,
+  .box-4 {
+    padding: 8px;
+  }
+
+  .box-1 > a:nth-child(1) > h4,
+  .box-2 > a:nth-child(1) > h4,
+  .box-3 > a:nth-child(1) > h4,
+  .box-4 > a:nth-child(1) > h4 {
+    width: 50%;
+    font-size: 18px;
+  }
+
+  /*
+    LATEST 
+
+    FUNDING
+  */
+
+  .latest_funding > div > div {
+    width: 100%;
+  }
+
+  .latest_funding > div > div > ul {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+  }
+
+  .latest_funding > div > div > ul > li > a {
+    margin: 11px 23px 0px 0px;
+    padding: 0;
+  }
+
+  .latest_funding > div > div > h2 > a {
+    margin-bottom: 14px;
+    font-size: 28px;
+  }
+
+  /*
+
+    LATEST 
+
+    FUNDING 
+
+    SEED 
+
+  */
+
+  .latest_funding_seed {
+    padding-left: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: #000000;
+  }
+
+  .latest_funding_seed > h4 {
+    font-size: 18px;
+  }
+
+  .latest_funding_seed > h5 {
+    font-size: 11px;
+    font-weight: 100;
+  }
+
+  /*
+  
+  LATEST 
+
+  FUNDING 
+
+  INVESTMENT
+  
+  */
+
+  .latest_funding_investment {
+    padding: 16px;
+  }
+
+  .latest_funding_investment > a > span {
+    font-size: 13px;
+    color: #555555;
+  }
+
+  .latest_funding_investment > a > span > i {
+    font-size: 16px;
+    color: #000000;
+    padding: 0;
+    margin: 0;
+  }
+
+  /*
+  
+  LATEST 
+
+  FUNDING 
+
+  DESC
+  
+  */
+
+  .lastest_funding_desc {
+    padding: 10px 16px 16px;
+  }
+
+  .latest_funding_desc > a {
+    color: #555555;
+    font-size: 12px;
+  }
+
+  .latest_funding_desc > span {
+    font-size: 12px;
+  }
+
+  /*
+  
+  LATEST 
+
+  FUNDING 
+
+  IMAGE
+  
+  */
+
+  .latest_funding_image {
+    top: 9px;
+  }
+
+  /*
+
+CATEGORIES
+
+*/
+
+  .categories {
+    width: 100%;
+    padding: 0px 20px;
+  }
+
+  .categories-section {
+    max-width: 100%;
+    min-height: 22%;
+    display: block;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+    margin: auto;
+  }
+
+  .categories-section > h2 {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    background-color: #ffffff;
+  }
+
+  .categories-section > div {
+    width: 100%;
+    height: 80%;
+  }
+
+  .categories-section > h2 > a {
+    font-size: 28px;
+    background-color: #ffffff;
+  }
+
+  .categories-section > div > ul {
+    background-color: #ffffff;
+    padding: 0;
+    min-height: 250px;
+  }
+
+  .categories-section > div > div > div {
+    width: 100vw;
+    height: 96px;
+    display: block;
+  }
+
+  .categories-section > div > div:nth-child(2) > div:nth-child(1) {
+    background-color: #fde4e4;
+  }
+
+  .categories-section > div > div:nth-child(2) > div:nth-child(1) > h5 {
+    font-size: 13px;
+    font-weight: 200;
+    color: #ff4422;
+  }
+
+  .categories-section > div > div:nth-child(2) > div:nth-child(1) > p {
+    font-size: 14px;
+    font-weight: bold;
+    color: #ff4422;
+  }
+
+  .categories-section > div > ul > li {
+    padding: 8px 0px;
+    border-bottom: 0.5px solid #77777748;
+  }
+
+  .categories-section > div > ul > li > a {
+    color: #555555;
+    font-size: 15px;
+  }
+
+  .back-firefox {
+    height: 96px;
+    width: 96px;
+    background-size: 96px 96px;
+    padding: 0;
+    display: block;
   }
 }
 
