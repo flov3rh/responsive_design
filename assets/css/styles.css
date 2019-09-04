@@ -725,13 +725,13 @@ div[class*="back_"] {
   }
 
   /*
-  
+
   LATEST
 
-  NEWS 
+  NEWS
 
   BOX
-  
+
   */
 
   .latest_news_box {
@@ -803,7 +803,7 @@ div[class*="back_"] {
   }
 
   /*
-    LATEST 
+    LATEST
 
     FUNDING
   */
@@ -832,11 +832,11 @@ div[class*="back_"] {
 
   /*
 
-    LATEST 
+    LATEST
 
-    FUNDING 
+    FUNDING
 
-    SEED 
+    SEED
 
   */
 
@@ -858,13 +858,13 @@ div[class*="back_"] {
   }
 
   /*
-  
-  LATEST 
 
-  FUNDING 
+  LATEST
+
+  FUNDING
 
   INVESTMENT
-  
+
   */
 
   .latest_funding_investment {
@@ -884,13 +884,13 @@ div[class*="back_"] {
   }
 
   /*
-  
-  LATEST 
 
-  FUNDING 
+  LATEST
+
+  FUNDING
 
   DESC
-  
+
   */
 
   .lastest_funding_desc {
@@ -907,13 +907,13 @@ div[class*="back_"] {
   }
 
   /*
-  
-  LATEST 
 
-  FUNDING 
+  LATEST
+
+  FUNDING
 
   IMAGE
-  
+
   */
 
   .latest_funding_image {
@@ -1006,11 +1006,11 @@ CATEGORIES
   }
 
   /*
-  
-  LATEST 
+
+  LATEST
 
   DEALS
-  
+
   */
   .latest_deals {
     height: 80%;
@@ -1050,9 +1050,9 @@ CATEGORIES
   }
 
   /*
-  
+
   AD
-  
+
   */
 
   .ad {
@@ -1060,9 +1060,9 @@ CATEGORIES
   }
 
   /*
-  
+
   FOOTER
-  
+
   */
 
   footer > div > ul {
@@ -1127,6 +1127,10 @@ CATEGORIES
     height: 50vh;
   }
 
+  .latest_news {
+    height: 135vh;
+  }
+
   .latest_news > div {
     display: flex;
     flex-direction: row;
@@ -1137,7 +1141,7 @@ CATEGORIES
   .latest_news article {
     width: 30%;
     margin: 10px;
-    height: 20vh;
+    height: 33.3%;
   }
 
   .box-1,
@@ -1175,6 +1179,11 @@ CATEGORIES
   .tablet {
     width: 100%;
   }
+
+  .ad {
+    height: 120px;
+  }
+
 }
 
 /*/ Desktop size */
