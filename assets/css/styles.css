@@ -1000,11 +1000,6 @@ CATEGORIES
     height: 100%;
   }
 
-  .sub-header {
-    height: 100%;
-    width: 100%;
-  }
-
   /*
 
   LATEST
@@ -1176,10 +1171,6 @@ CATEGORIES
     margin-left: 10px;
   }
 
-  .latest_funding>div>div>ul {
-
-  }
-
   .latest_funding>div>div>ul>li {
     padding: 5px 25px 0 8px;
     margin-left: 2px;
@@ -1191,23 +1182,39 @@ CATEGORIES
   }
 
   .categories {
-    height: 2000px;
+    height: 2850px;
     padding: 0;
-    display: block;
   }
 
   .categories-section {
+    margin-bottom: 350px;
+    display: block;
   }
 
   .categories-section .backgr-fb {
-    height: 180px;
-    width: 40%;
+    height: 280px;
+  }
+
+  .categories-section .sub-header {
+    display: block;
+    height: 90px;
+    position: relative;
+  }
+
+  .categories-section .sub-header  p {
+    width: 60%;
+  }
+
+  .categories-section .sub-header .back_firefox {
+    height: 90px;
+    width: 20%;
+    position: absolute;
+    right: 0;
+    top: 0;
   }
 
   .categories-section ul{
-    background: yellow;
-    width: 100%;
-    height: 500px;
+    box-sizing: content-box;
   }
 
   .tablet {
@@ -1218,6 +1225,9 @@ CATEGORIES
     height: 120px;
   }
 
+  nav {
+    z-index: 1;
+  }
 }
 
 /*/ Desktop size */
