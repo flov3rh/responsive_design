@@ -576,7 +576,7 @@ h2 {
 
 .categories-section .backgr-fb {
   background: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/09/Facebook-likes-796x418.png)
-  no-repeat;
+    no-repeat;
   width: 100%;
   height: 45%;
   background-color: pink;
@@ -626,7 +626,7 @@ h2 {
 
 .categories-section .sub-header > .back_firefox {
   background: url(https://img-cdn.tnwcdn.com/image?fit=600%2C336&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2016%2F08%2FFirefoxHeader.jpg&signature=fbe9f214c2ba9c8774052d41f6781a81)
-  no-repeat;
+    no-repeat;
   background-position: center;
   background-size: 180% 100%;
 }
@@ -1096,8 +1096,14 @@ CATEGORIES
     display: none;
   }
 
+  body,
+  html,
+  main {
+    max-width: 100vw;
+  }
+
   .header_tablet {
-    width: 99vw;
+    width: 90vw;
     background-color: black;
   }
 
@@ -1124,7 +1130,7 @@ CATEGORIES
   }
 
   .latest_news {
-    height: 135vh;
+    height: 100vh;
   }
 
   .latest_news > div {
@@ -1155,8 +1161,14 @@ CATEGORIES
 
   .categories > section {
     width: 50%;
-    height: 60vh;
+    height: 40vh;
     padding: 10px;
+    display: block;
+  }
+
+  .latest_deals {
+    max-width: 100vw;
+    margin: auto;
   }
 
   .latest_deals div:nth-child(2) {
@@ -1171,13 +1183,17 @@ CATEGORIES
     margin-left: 10px;
   }
 
-  .latest_funding>div>div>ul>li {
+  .deal_container {
+    display: block;
+  }
+
+  .latest_funding > div > div > ul > li {
     padding: 5px 25px 0 8px;
     margin-left: 2px;
   }
 
-  .latest_funding > div > div > ul > li:first-child>a,
-  .latest_funding > div > div > ul > li:nth-child(2)>a {
+  .latest_funding > div > div > ul > li:first-child > a,
+  .latest_funding > div > div > ul > li:nth-child(2) > a {
     border-right: 2px solid orange;
   }
 
@@ -1201,7 +1217,7 @@ CATEGORIES
     position: relative;
   }
 
-  .categories-section .sub-header  p {
+  .categories-section .sub-header p {
     width: 60%;
   }
 
@@ -1213,7 +1229,7 @@ CATEGORIES
     top: 0;
   }
 
-  .categories-section ul{
+  .categories-section ul {
     box-sizing: content-box;
   }
 
