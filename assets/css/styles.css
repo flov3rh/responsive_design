@@ -88,10 +88,6 @@ html,body,h1,h2,h3,h4,h5,h6,p,ol,ul,li,pre,code,address,variable,form,fieldset,b
   position:absolute;
   }
 
-  i {
-  margin-left:10px;
-  }
-
   header {
     background:#000;
     height:35px;
@@ -277,6 +273,7 @@ html,body,h1,h2,h3,h4,h5,h6,p,ol,ul,li,pre,code,address,variable,form,fieldset,b
   font-family:verdana;
   height:33.3%;
   width:100%;
+  position: relative;
   }
 
   .cover_trigger_header {
@@ -288,16 +285,16 @@ html,body,h1,h2,h3,h4,h5,h6,p,ol,ul,li,pre,code,address,variable,form,fieldset,b
   }
 
   .cover_trigger h1 {
-  font-size:5em;
   line-height:0.85;
+  font-size: 3em;
   }
 
-  .cover_trigger h2 {
-  font-size:2em;
+  .boxes > .cover_trigger h2 {
+  font-size:1.3em;
   }
 
-  .cover_trigger span {
-  font-size:.75em;
+  .boxes > .cover_trigger p {
+  font-size:1em;
   }
 
   .cover_trigger > div {
@@ -309,7 +306,6 @@ html,body,h1,h2,h3,h4,h5,h6,p,ol,ul,li,pre,code,address,variable,form,fieldset,b
 
   .cover_trigger_box {
   flex-direction:column;
-  height:35%;
   padding:15px;
   }
 
@@ -321,14 +317,16 @@ html,body,h1,h2,h3,h4,h5,h6,p,ol,ul,li,pre,code,address,variable,form,fieldset,b
 
   .cover_trigger_box_right {
   padding:7px;
+  position: absolute;
+  bottom: 0;
   }
 
   .cover_trigger_box_right h2 {
-  font-size:1em;
+  font-size:1.3em;
   }
 
   .cover_trigger_box_right p {
-  font-size:.45em;
+  font-size:1em;
   padding:5px;
   }
 
@@ -398,6 +396,10 @@ html,body,h1,h2,h3,h4,h5,h6,p,ol,ul,li,pre,code,address,variable,form,fieldset,b
   position:relative;
   }
 
+  .latest_funding div[class*="box-"] a {
+    color: black;
+  }
+
   .latest_funding div[class*="box-"] a:nth-child(1) h4 {
   height:39.31px;
   }
@@ -428,7 +430,7 @@ html,body,h1,h2,h3,h4,h5,h6,p,ol,ul,li,pre,code,address,variable,form,fieldset,b
   }
 
   .latest_funding_desc span {
-  color:#aaa;
+    color: black;
   }
 
   .latest_funding_investment {
@@ -440,10 +442,12 @@ html,body,h1,h2,h3,h4,h5,h6,p,ol,ul,li,pre,code,address,variable,form,fieldset,b
   display:flex;
   flex-direction:column;
   justify-content:space-evenly;
+  color: gray;
   }
 
   .latest_funding_investment a span {
   padding:5px 0;
+  color: black;
   }
 
   .latest_funding_seed {
@@ -542,9 +546,6 @@ html,body,h1,h2,h3,h4,h5,h6,p,ol,ul,li,pre,code,address,variable,form,fieldset,b
   padding:5px;
   }
 
-  .categories-section > div > ul > li > a {
-  }
-
   .latest_deals {
   display:block;
   height:1000px;
@@ -614,6 +615,12 @@ html,body,h1,h2,h3,h4,h5,h6,p,ol,ul,li,pre,code,address,variable,form,fieldset,b
   height:16px;
   width:66px;
   }
+
+  footer > div > ul > li > a {
+    color:#aaa;
+  }
+
+/*  ----------------------------------- */
 
   @media only screen and (max-width: 700px){
   body {
@@ -882,16 +889,16 @@ html,body,h1,h2,h3,h4,h5,h6,p,ol,ul,li,pre,code,address,variable,form,fieldset,b
   }
 
   footer > div > ul > li > a > i {
-  color:#fff;
+  color:#aaa;
   margin:0;
   padding-top:11px;
   }
 
-    .latest_funding > div > div,.deal_container {
-      width:100%;
-    }
-
+  .latest_funding > div > div,.deal_container {
+    width:100%;
   }
+
+}
 
 
   @media only screen and (min-width: 700px) and (max-width: 1000px){
@@ -1074,6 +1081,15 @@ html,body,h1,h2,h3,h4,h5,h6,p,ol,ul,li,pre,code,address,variable,form,fieldset,b
   height:100%;
   width:50%;
   }
+
+  .boxes > .cover_trigger h2 {
+    font-size: 1.8em;
+  }
+
+  .cover_trigger h2 {
+    font-size: 0.90em;
+  }
+
 
   .ad {
   height:75px;
