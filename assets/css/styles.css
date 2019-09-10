@@ -3,7 +3,7 @@ html,body,h1,h2,h3,h4,h5,h6,p,ol,ul,li,pre,code,address,variable,form,fieldset,b
   font-weight:400;
   margin:0;
   padding:0;
-  }
+}
 
   table {
   border-collapse:collapse;
@@ -86,10 +86,6 @@ html,body,h1,h2,h3,h4,h5,h6,p,ol,ul,li,pre,code,address,variable,form,fieldset,b
   .bottom {
   bottom:0;
   position:absolute;
-  }
-
-  body {
-  background-color:#e6e6e6;
   }
 
   i {
@@ -340,25 +336,26 @@ html,body,h1,h2,h3,h4,h5,h6,p,ol,ul,li,pre,code,address,variable,form,fieldset,b
   background-color:#FFC0CB;
   height:50vh;
   margin:50px auto;
-  width:98%;
+  max-width:94%;
   }
 
   .latest_news {
-  height:100vh;
-  margin:20px auto;
-  width:93vw;
+  width:94vw;
+  height: 800px;
+  margin:15px auto;
   }
 
   .latest_news article {
   background:#FFF;
-  border:2px solid gray;
+  display: block;
   height:80px;
-  width:100%;
+  margin-bottom: 10px;
   }
 
   .latest_news article > figure {
   align-self:center;
   width:98%;
+  margin: 0;
   }
 
   .latest_news article span {
@@ -366,7 +363,7 @@ html,body,h1,h2,h3,h4,h5,h6,p,ol,ul,li,pre,code,address,variable,form,fieldset,b
   }
 
   .latest_news_box > article {
-  height:500px;
+  height:90px;
   }
 
   .latest_funding {
@@ -460,19 +457,8 @@ html,body,h1,h2,h3,h4,h5,h6,p,ol,ul,li,pre,code,address,variable,form,fieldset,b
   width:100%;
   }
 
-  .latest_funding_seed h4 {
-  font-weight:1000;
-  }
-
-  .categories {
-  padding-bottom:80px;
-  }
-
   .categories-section {
-  background-color:#e6e6e6;
-  height:90vh;
   margin:50px auto;
-  width:93vw;
   }
 
   .categories-section > h2 {
@@ -481,15 +467,22 @@ html,body,h1,h2,h3,h4,h5,h6,p,ol,ul,li,pre,code,address,variable,form,fieldset,b
 
   .categories-section > div {
   background:#FFF;
-  height:95%;
-  width:95%;
+  height:100%;
+  width:100%;
+  }
+
+  .categories-section > div > ul {
+  }
+
+  .categories-section > div > ul {
+    font-size: 14px;
   }
 
   .categories-section .backgr-fb {
   background:url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/09/Facebook-likes-796x418.png) no-repeat;
   background-color:#FFC0CB;
   background-size:100% 100%;
-  height:45%;
+  height: 60%;
   position:relative;
   width:100%;
   }
@@ -521,7 +514,6 @@ html,body,h1,h2,h3,h4,h5,h6,p,ol,ul,li,pre,code,address,variable,form,fieldset,b
 
   .categories-section .sub-header {
   background:orange;
-  height:15%;
   }
 
   .categories-section .sub-header > div {
@@ -542,13 +534,15 @@ html,body,h1,h2,h3,h4,h5,h6,p,ol,ul,li,pre,code,address,variable,form,fieldset,b
   }
 
   .categories-section > div > ul {
-  background-color:#e6e6e6;
-  height:40%;
+  height: 10%;
   }
 
   .categories-section > div > ul > li {
-  border-bottom:2px solid lightgray;
+  border-bottom:1px solid lightgray;
   padding:5px;
+  }
+
+  .categories-section > div > ul > li > a {
   }
 
   .latest_deals {
@@ -767,7 +761,7 @@ html,body,h1,h2,h3,h4,h5,h6,p,ol,ul,li,pre,code,address,variable,form,fieldset,b
 
   .categories {
   padding:0 20px;
-  width:100%;
+
   }
 
   .categories-section {
@@ -800,11 +794,6 @@ html,body,h1,h2,h3,h4,h5,h6,p,ol,ul,li,pre,code,address,variable,form,fieldset,b
   .categories-section > div > ul {
   background-color:#fff;
   padding:0 0 0 20px;
-  }
-
-  .categories-section > div > div > div {
-  height:96px;
-  width:100vw;
   }
 
   .categories-section > div > div:nth-child(2) > div:nth-child(1) {
@@ -872,7 +861,7 @@ html,body,h1,h2,h3,h4,h5,h6,p,ol,ul,li,pre,code,address,variable,form,fieldset,b
   }
 
   .ad {
-  max-width:100%;
+  max-width:94%;
   }
 
   footer > div > ul {
@@ -898,9 +887,9 @@ html,body,h1,h2,h3,h4,h5,h6,p,ol,ul,li,pre,code,address,variable,form,fieldset,b
   padding-top:11px;
   }
 
-  .latest_funding > div > div,.deal_container {
-  width:100%;
-  }
+    .latest_funding > div > div,.deal_container {
+      width:100%;
+    }
 
   }
 
@@ -916,7 +905,7 @@ html,body,h1,h2,h3,h4,h5,h6,p,ol,ul,li,pre,code,address,variable,form,fieldset,b
 
   .header_tablet {
   background-color:#000;
-  width:90vw;
+  width:100vw;
   }
 
   .header_tablet ul li a {
@@ -942,7 +931,7 @@ html,body,h1,h2,h3,h4,h5,h6,p,ol,ul,li,pre,code,address,variable,form,fieldset,b
   }
 
   .latest_news {
-  height:100vh;
+    height: auto;
   }
 
   .latest_news > div {
@@ -967,16 +956,22 @@ html,body,h1,h2,h3,h4,h5,h6,p,ol,ul,li,pre,code,address,variable,form,fieldset,b
   display:flex;
   flex-direction:row;
   flex-wrap:wrap;
-  height:2850px;
   padding:0;
+  width:100vw;
+  margin: 20px auto;
   }
 
-  .categories > section {
+  .categories-section {
   display:block;
-  height:40vh;
+  height:100vh;
+  width: 98%;
   padding:10px;
-  width:50%;
   }
+
+ .categories-section>* {
+  margin: auto;
+  width: 100%;
+ }
 
   .latest_deals {
   margin:auto;
@@ -1010,11 +1005,10 @@ html,body,h1,h2,h3,h4,h5,h6,p,ol,ul,li,pre,code,address,variable,form,fieldset,b
 
   .categories-section {
   display:block;
-  margin-bottom:350px;
   }
 
   .categories-section .backgr-fb {
-  height:280px;
+  height:500px;
   }
 
   .categories-section .sub-header {
@@ -1088,7 +1082,7 @@ html,body,h1,h2,h3,h4,h5,h6,p,ol,ul,li,pre,code,address,variable,form,fieldset,b
 
   .latest_news,.latest_funding,.categories,.latest_deals {
   margin:auto;
-  width:65%;
+  width:90%;
   }
 
   .latest_news > div {
@@ -1120,10 +1114,10 @@ html,body,h1,h2,h3,h4,h5,h6,p,ol,ul,li,pre,code,address,variable,form,fieldset,b
   border-right:1px solid orange;
   }
 
-  .categories > section {
-  height:60vh;
+  .categories-section {
   padding:5px;
   width:33%;
+  margin: 0 0.8px 250px 0.8px;
   }
 
   .categories section:nth-child(9) {
