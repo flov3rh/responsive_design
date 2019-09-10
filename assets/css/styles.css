@@ -26,9 +26,7 @@ ul {
 q:before,q:after {
 	content: "";
 }
-* {
-	-moz-box-sizing: border-box;
-	-webkit-box-sizing: border-box;
+body * {
 	box-sizing: border-box;
 }
 a {
