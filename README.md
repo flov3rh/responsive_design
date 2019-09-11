@@ -1,6 +1,7 @@
 # responsive_design
 
 This is the sixth project of the Main HTML/CSS curriculum at [Microverse](https://www.microverse.org/) - @microverseinc
+
 * The goal was to recreate The Next Web's main page 
 * The project was completed using html and css 
 
@@ -10,9 +11,9 @@ This is the sixth project of the Main HTML/CSS curriculum at [Microverse](https:
 
 #### Screenshots
 
-![Not found Screenshot_1.png](screenshots/Screenshot_1.png)
-![Not found Screenshot_2.png](screenshots/Screenshot_2.png)
-![Not found Screenshot_3.png](screenshots/Screenshot_3.png)
+![Not found Screenshot_2.png](assets/images/mobile_view.png)
+![Not found Screenshot_1.png](assets/images/desktop_view.png)
+![Not found Screenshot_3.png](assets/images/tab_view.png)
 
 #### Authors
 
