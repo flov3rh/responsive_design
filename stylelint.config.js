@@ -3,11 +3,7 @@
 module.exports = {
   "extends": "stylelint-config-recommended",
   "rules": {
-
-    "no-descending-specificity":[null],
-    "at-rule-empty-line-before": [null],
-      ignore: ["after-comment"],
-    }
+    "no-descending-specificity": null,
     "at-rule-name-case": "lower",
     "at-rule-name-space-after": "always-single-line",
     "at-rule-semicolon-newline-after": "always",
