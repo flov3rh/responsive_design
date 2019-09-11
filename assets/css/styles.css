@@ -499,6 +499,7 @@ h2 {
 
 .categories-section > div > ul {
   font-size: 14px;
+  height: 10%;
 }
 
 .categories-section .backgr-fb {
@@ -555,10 +556,6 @@ div[class*="back_"] {
   background: url(https://es.upperroom.org/assets/fallback/square_default-3ae9a684a1bbda2f25bbacd9fa825fe92f9e36d7b8dc6dbec4f448417918f87a.png) no-repeat;
   height: 100%;
   width: 35%;
-}
-
-.categories-section > div > ul {
-  height: 10%;
 }
 
 .categories-section > div > ul > li {
