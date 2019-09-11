@@ -1030,6 +1030,7 @@ footer > div > ul > li > a {
     margin: auto;
     width: 100%;
   }
+
   .categories-section .backgr-fb {
     height: 500px;
   }
@@ -1104,7 +1105,7 @@ footer > div > ul > li > a {
   .logo,
   .mobile_nav,
   .header_tablet,
-  .tablet{
+  .tablet {
     display: none;
   }
 
