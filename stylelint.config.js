@@ -3,13 +3,11 @@
 module.exports = {
   "extends": "stylelint-config-recommended",
   "rules": {
-    "at-rule-empty-line-before": [ "always", {
-      except: [
-        "blockless-after-same-name-blockless",
-        "first-nested",
-      ],
+
+    "no-descending-specificity":[null],
+    "at-rule-empty-line-before": [null],
       ignore: ["after-comment"],
-    } ],
+    }
     "at-rule-name-case": "lower",
     "at-rule-name-space-after": "always-single-line",
     "at-rule-semicolon-newline-after": "always",
